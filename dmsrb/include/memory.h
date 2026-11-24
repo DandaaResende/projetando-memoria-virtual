@@ -1,3 +1,4 @@
+
 #ifndef MEMORY_H
 #define MEMORY_H
 
@@ -11,5 +12,8 @@ typedef struct {
 } PhysicalMemory;
 
 void initialize_memory(PhysicalMemory *memory);
+int find_free_frame(PhysicalMemory *memory);
+void load_page(PhysicalMemory *memory, int frame_number,
+               const signed char *page_data);
 
 #endif
