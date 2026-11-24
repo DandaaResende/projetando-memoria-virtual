@@ -2,7 +2,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11 -pthread -Iinclude
 
-SRC = src/main.c src/address.c src/memory.c src/page_table.c src/backing_store.c src/vm_manager.c src/replacement.c
+SRC = src/main.c src/address.c src/memory.c src/page_table.c src/backing_store.c src/vm_manager.c src/replacement.c src/tlb.c
 OBJ = $(SRC:.c=.o)
 
 all: vm
