@@ -1,0 +1,45 @@
+Script started on 2026-11-24 17:52:59-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="61" LINES="9"]
+[?2004h]0;danda@LAPTOP-CDROKK7L: /mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[01;32mdanda@LAPTOP-CDROKK7L[00m:[01;34m/mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[00m$ [7mdate[27m
+[7mwhoami[27m
+[7mpwd[27m[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdate
+whoami
+pwd
+[?2004lTue Nov 24 17:53:03 -03 2026
+danda
+/mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb
+[?2004h]0;danda@LAPTOP-CDROKK7L: /mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[01;32mdanda@LAPTOP-CDROKK7L[00m:[01;34m/mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[00m$ [7mgcc --version[27m
+[7mmake --version[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc --version
+make --version
+[?2004lgcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+GNU Make 4.3
+Built for x86_64-pc-linux-gnu
+Copyright (C) 1988-2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+[?2004h]0;danda@LAPTOP-CDROKK7L: /mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[01;32mdanda@LAPTOP-CDROKK7L[00m:[01;34m/mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[00m$ [7mmkdir -p src[27m
+[7mmkdir -p include[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir -p src
+mkdir -p include
+[?2004l[?2004h]0;danda@LAPTOP-CDROKK7L: /mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[01;32mdanda@LAPTOP-CDROKK7L[00m:[01;34m/mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[00m$ [7mfind . -maxdepth 2 -type d -o[27m[7m [27m[7m-type f[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind . -maxdepth 2 -type d -o -type f
+[?2004l.
+./evidencias.log
+./include
+./src
+[?2004h]0;danda@LAPTOP-CDROKK7L: /mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[01;32mdanda@LAPTOP-CDROKK7L[00m:[01;34m/mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[00m$ [7mtouch src/main.c[27mtouch src/main.c
+[?2004l[?2004h]0;danda@LAPTOP-CDROKK7L: /mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[01;32mdanda@LAPTOP-CDROKK7L[00m:[01;34m/mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[00m$ [7mmake[27mmake
+[?2004lgcc -Wall -Wextra -std=c11 -pthread -Iinclude   -c -o src/main.o src/main.c
+[01m[Ksrc/main.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ksrc/main.c:5:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    5 | int main([01;35m[Kint argc[m[K, char *argv[])
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[Ksrc/main.c:5:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    5 | int main(int argc, [01;35m[Kchar *argv[][m[K)
+      |                    [01;35m[K~~~~~~^~~~~~[m[K
+gcc -Wall -Wextra -std=c11 -pthread -Iinclude -o vm src/main.o
+[?2004h]0;danda@LAPTOP-CDROKK7L: /mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[01;32mdanda@LAPTOP-CDROKK7L[00m:[01;34m/mnt/c/Users/danda/OneDrive/projetos/projetando-memoria-virtual/dmsrb[00m$ [7m./vm[27m./vm
+[?2004lVirtual Memory Manager
+[?2004h]0;danda@LAPTOP-CDROKK7L: 
